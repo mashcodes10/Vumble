@@ -1,70 +1,7 @@
-# Getting Started with Create React App
+**The Problem:** Commodores often seek to form lasting romantic connections and friendships that align with their academic interests, extracurricular activities, and campus life. Traditional dating apps do not cater to the unique environment of college campuses, where academic schedules, residential living, and campus activities play significant roles in students’ lives.
+**The Solution:** With VUmble, students can connect with peers based on a comprehensive range of criteria including academic interests, study habits, extracurricular activities, dormitory affiliations, and research projects. The platform provides a holistic approach to fostering meaningful relationships in the collegiate environment.
+**Platform Features:** 1. Profiles: Students create detailed profiles that include information about their major, courses, study preferences, extracurricular activities, dormitory affiliations, and research projects. 2. Matching Algorithm: Matches are made based on academic interests, study habits, course overlaps, extracurricular activities, dormitory affiliations, and research interests. 3. Integrated Chat: Real-time chat functionality for discussing shared interests, planning activities, and organizing study sessions. 4. Virtual and In-Person Events: - Virtual and in-person study sessions. - Club meetings and extracurricular activity planning. - Dorm events and small group gatherings. - Research collaboration discussions. 5. Social and Academic Recommendations: - Recommendations for campus events, clubs, student organizations, dorm amenities, and academic resources. - Integration with campus library systems, course schedules, student organization systems, and housing systems. 6. Activity Planning: - Tools for organizing study groups, club activities, dorm events, and research meetings. - Virtual space for hosting discussions and presentations related to academic or extracurricular interests.
+**Upcoming Features:** 1. Integration with Educational Systems: Integration with college course registration, academic calendars, and library systems for streamlined matching and event planning. 2. Virtual and In-Person Challenges: Implementing various challenges and events related to academics, clubs, dorm life, and research projects. 3. Expanded Community Features: - Interdisciplinary connections for collaborative academic projects. - Virtual office hours and discussion forums. 4. Admin Roles: Ensuring community standards, managing user activity, and overseeing content quality.
+**Technology Stack:** - Front-End: React.JS with Material-UI for a modern and responsive user interface. - Back-End: Node.JS and Express.JS for handling server-side logic and API creation. - Database: MongoDB for flexible, high-performance data storage. - Real-Time Communication: Socket.IO for real-time chat and event updates. - Deployment (In Progress): AWS EC2 for reliable and scalable cloud deployment.
+With VUmble, students can effortlessly find romantic partners and friends who share their passions, whether it’s through joint academic interests, shared dorm experiences, or mutual participation in campus clubs and research projects. The platform is designed to foster meaningful relationships and enrich the college experience through a comprehensive and engaging network.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
