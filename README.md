@@ -1,19 +1,192 @@
-**The Problem:** Commodores often seek to form lasting romantic connections and friendships that align with their academic interests, extracurricular activities, and campus life. Traditional dating apps do not cater to the unique environment of college campuses, where academic schedules, residential living, and campus activities play significant roles in students’ lives.
+# Vumble - Dating App
 
-**The Solution:** With VUmble, students can connect with peers based on a comprehensive range of criteria including academic interests, study habits, extracurricular activities, dormitory affiliations, and research projects. The platform provides a holistic approach to fostering meaningful relationships in the collegiate environment.
+A modern dating application built with React and Node.js, featuring swipe-based matching, real-time chat, and user authentication.
 
-**Platform Features:** 
-1. Profiles: Students create detailed profiles that include information about their major, courses, study preferences, extracurricular activities, dormitory affiliations, and research projects.
-2. Matching Algorithm: Matches are made based on academic interests, study habits, course overlaps, extracurricular activities, dormitory affiliations, and research interests.
-3. Integrated Chat: Real-time chat functionality for discussing shared interests, planning activities, and organizing study sessions.
-4. Virtual and In-Person Events: - Virtual and in-person study sessions. - Club meetings and extracurricular activity planning. - Dorm events and small group gatherings. - Research collaboration discussions.
-5. Social and Academic Recommendations: - Recommendations for campus events, clubs, student organizations, dorm amenities, and academic resources. - Integration with campus library systems, course schedules, student organization systems, and housing systems.
-6.  Activity Planning: - Tools for organizing study groups, club activities, dorm events, and research meetings. - Virtual space for hosting discussions and presentations related to academic or extracurricular interests.
-**Upcoming Features:** 1. Integration with Educational Systems: Integration with college course registration, academic calendars, and library systems for streamlined matching and event planning. 2. Virtual and In-Person Challenges: Implementing various challenges and events related to academics, clubs, dorm life, and research projects. 3. Expanded Community Features: - Interdisciplinary connections for collaborative academic projects. - Virtual office hours and discussion forums. 4. Admin Roles: Ensuring community standards, managing user activity, and overseeing content quality.
-**Technology Stack:**
-- Front-End: React.JS with Material-UI for a modern and responsive user interface.
-- Back-End: Node.JS and Express.JS for handling server-side logic and API creation.
-- Database: MongoDB for flexible, high-performance data storage. - Real-Time Communication: Socket.IO for real-time chat and event updates.
-- Deployment (In Progress): AWS EC2 for reliable and scalable cloud deployment.
-With VUmble, students can effortlessly find romantic partners and friends who share their passions, whether it’s through joint academic interests, shared dorm experiences, or mutual participation in campus clubs and research projects. The platform is designed to foster meaningful relationships and enrich the college experience through a comprehensive and engaging network.
+## 🚀 Features
+
+- **User Authentication**: Secure signup/login with JWT tokens and bcrypt password hashing
+- **Profile Creation**: Comprehensive onboarding with personal details, photos, and preferences
+- **Swipe Interface**: Tinder-like card swiping for matching with other users
+- **Smart Matching**: Gender-based matching algorithm with user preferences
+- **Real-time Chat**: Instant messaging between matched users
+- **Responsive Design**: Modern UI with smooth animations and intuitive navigation
+- **Secure Backend**: RESTful API with MongoDB database and Express.js server
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React.js** - User interface and state management
+- **React Router** - Navigation and routing
+- **React Tinder Card** - Swipe functionality
+- **Axios** - HTTP client for API calls
+- **React Cookies** - Cookie management for authentication
+
+### Backend
+- **Node.js** - Server runtime environment
+- **Express.js** - Web application framework
+- **MongoDB** - NoSQL database
+- **JWT** - JSON Web Token authentication
+- **bcrypt** - Password hashing
+- **CORS** - Cross-origin resource sharing
+- **UUID** - Unique identifier generation
+
+## 📁 Project Structure
+
+```
+Vumble/
+├── public/                 # Static assets
+├── src/                    # React source code
+│   ├── components/         # Reusable UI components
+│   │   ├── AuthModal.js   # Authentication modal
+│   │   ├── Chat.js        # Chat functionality
+│   │   ├── ChatContainer.js # Chat container
+│   │   ├── ChatDisplay.js # Chat display
+│   │   ├── ChatHeader.js  # Chat header
+│   │   ├── ChatInput.js   # Chat input
+│   │   ├── MatchesDisplay.js # Matches display
+│   │   └── Nav.js         # Navigation component
+│   ├── pages/             # Page components
+│   │   ├── Dashboard.js   # Main dashboard with swipe
+│   │   ├── Home.js        # Landing page
+│   │   └── OnBoarding.js  # User profile setup
+│   ├── images/            # Image assets
+│   ├── App.js             # Main app component
+│   └── index.js           # React entry point
+├── index.js               # Express server
+├── package.json           # Dependencies and scripts
+└── README.md              # Project documentation
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- MongoDB database
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/vumble.git
+   cd vumble
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   Create a `.env` file in the root directory:
+   ```env
+   URI=your_mongodb_connection_string
+   ```
+
+4. **Start the backend server**
+   ```bash
+   npm run start:backend
+   ```
+   The server will run on `http://localhost:8000`
+
+5. **Start the React frontend**
+   In a new terminal:
+   ```bash
+   cd src
+   npm start
+   ```
+   The app will open in your browser at `http://localhost:3000`
+
+## 🔧 API Endpoints
+
+### Authentication
+- `POST /signup` - User registration
+- `POST /login` - User authentication
+
+### User Management
+- `GET /user` - Get user profile
+- `PUT /user` - Update user profile
+- `GET /gendered-users` - Get users by gender preference
+- `GET /users` - Get multiple users by IDs
+
+### Matching & Chat
+- `PUT /addmatch` - Add a new match
+- `GET /messages` - Get chat messages
+- `POST /message` - Send a new message
+
+## 💡 Key Features Explained
+
+### Swipe Interface
+The app uses `react-tinder-card` to create an intuitive swipe experience:
+- Swipe right to like and potentially match
+- Swipe left to pass
+- Automatic match detection and storage
+
+### User Matching
+- Users are matched based on gender preferences
+- Matches are stored in the database
+- Real-time updates when new matches occur
+
+### Chat System
+- Instant messaging between matched users
+- Message persistence in MongoDB
+- Real-time chat interface with user avatars
+
+### Profile Management
+- Comprehensive onboarding process
+- Profile photo upload via URL
+- Customizable gender preferences and visibility settings
+
+## 🔒 Security Features
+
+- **Password Hashing**: bcrypt with salt rounds
+- **JWT Authentication**: Secure token-based authentication
+- **Input Validation**: Server-side validation for all inputs
+- **CORS Protection**: Configured for secure cross-origin requests
+
+## 🎨 UI/UX Features
+
+- **Responsive Design**: Works on desktop and mobile devices
+- **Smooth Animations**: Card swipe animations and transitions
+- **Modern Interface**: Clean, intuitive design inspired by popular dating apps
+- **Accessibility**: Proper form labels and semantic HTML
+
+## 🚧 Development
+
+### Available Scripts
+- `npm run start:backend` - Start the backend server with nodemon
+- `npm test` - Run tests (currently placeholder)
+
+### Code Style
+- ES6+ JavaScript features
+- React functional components with hooks
+- Consistent component structure
+- Clear separation of concerns
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the ISC License.
+
+## 🙏 Acknowledgments
+
+- Inspired by popular dating applications
+- Built with modern web technologies
+- Community-driven development approach
+
+## 📞 Support
+
+For support and questions, please open an issue in the GitHub repository.
+
+---
+
+**Note**: This is a demo project for educational purposes. Please ensure compliance with local laws and regulations when deploying dating applications.
 
